@@ -1,0 +1,39 @@
+// Student Grading System
+
+// Student Information
+let firstName = "Ella";
+let lastName = "Durodola";
+
+let mathematicsScore = 25;
+let englishScore = 20;
+let biologyScore = 25;
+
+// Calculate Total Score
+let totalScore = mathematicsScore + englishScore + biologyScore;
+
+// Determine Remark
+let remark;
+
+if (totalScore >= 70) {
+    remark = "Excellent";
+} else if (totalScore >= 50 && totalScore <= 69) {
+    remark = "Good";
+} else if (totalScore >= 35 && totalScore <= 49) {
+    remark = "You can do better";
+} else {
+    remark = "Fail";
+}
+
+// Display Examination Results
+console.log("==================================");
+console.log("       STUDENT EXAMINATION RESULT");
+console.log("==================================");
+console.log("Student Name: " + firstName + " " + lastName);
+console.log("----------------------------------");
+console.log("Mathematics Score: " + mathematicsScore);
+console.log("English Score: " + englishScore);
+console.log("Biology Score: " + biologyScore);
+console.log("----------------------------------");
+console.log("Total Score: " + totalScore);
+console.log("Remark: " + remark);
+console.log("==================================");
